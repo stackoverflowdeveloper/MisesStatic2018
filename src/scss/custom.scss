@@ -8,9 +8,15 @@ $main-blue: #214d84;
   justify-content: center;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 body .aboutContainer {
   display: block;
-  font-family: "Open Sans", sans-serif;
+  @media (max-width: 1280px) {
+    padding: 0 30px;
+  }
 }
 
 .gridWrapper {
@@ -29,6 +35,7 @@ body .aboutContainer {
   &heading {
     font-size: 36px;
     color: $main-blue;
+    padding-bottom: 30px;
   }
   &foto {
     @include flex-align-center;
@@ -62,5 +69,17 @@ body .aboutContainer {
     &-Mail::before {
       background-image: url("../img/aboutMail.png");
     }
+  }
+  &context {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: #8eb7fc 1px solid;
+    @media (max-width: 1280px) {
+      padding: 0 30px 30px 30px;
+    }
+  }
+  &banner {
+    text-align: center;
+    padding-bottom: 30px;
   }
 }

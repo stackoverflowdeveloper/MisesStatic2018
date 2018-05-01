@@ -1413,9 +1413,18 @@ body footer input.search-bottom {
   }
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 body .aboutContainer {
   display: block;
-  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1280px) {
+  body .aboutContainer {
+    padding: 0 30px;
+  }
 }
 
 .gridWrapper {
@@ -1435,6 +1444,7 @@ body .aboutContainer {
 .about__heading {
   font-size: 36px;
   color: #214d84;
+  padding-bottom: 30px;
 }
 
 .about__foto {
@@ -1478,5 +1488,22 @@ body .aboutContainer {
 
 .about__icon-Mail::before {
   background-image: url("../img/aboutMail.png");
+}
+
+.about__context {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: #8eb7fc 1px solid;
+}
+
+@media (max-width: 1280px) {
+  .about__context {
+    padding: 0 30px 30px 30px;
+  }
+}
+
+.about__banner {
+  text-align: center;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=custom.css.map */
