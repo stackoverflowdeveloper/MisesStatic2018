@@ -1,0 +1,85 @@
+@import 'style.scss';
+
+$main-blue: #214d84;
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+body .aboutContainer {
+  display: block;
+  @media (max-width: 1280px) {
+    padding: 0 30px;
+  }
+}
+
+.gridWrapper {
+  display: block;
+
+  @media (min-width: 768px) {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+.about__ {
+  &heading {
+    font-size: 36px;
+    color: $main-blue;
+    padding-bottom: 30px;
+  }
+  &foto {
+    @include flex-align-center;
+  }
+  &member {
+    font-size: 28px;
+    text-align: center;
+    color: $main-blue;
+  }
+  &info {
+    text-align: center;
+    font-size: 14px;
+  }
+  &relevant {
+    color: $main-blue;
+  }
+  &icon {
+    margin-left: 20px;
+    text-align: center;
+    font-size: 14px;
+    &::before {
+      width: 20px;
+      height: 20px;
+      content: " ";
+      position: absolute;
+      margin-left: -25px;
+    }
+    &-Phone::before {
+      background-image: url("../img/aboutPhone.png");
+    }
+    &-Mail::before {
+      background-image: url("../img/aboutMail.png");
+    }
+  }
+  &context {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: #8eb7fc 1px solid;
+    @media (max-width: 1280px) {
+      padding: 0 30px 30px 30px;
+    }
+  }
+  &banner {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
