@@ -1,6 +1,8 @@
 @import 'style.scss';
 
 $main-blue: #214d84;
+$orange: #e35a24;
+$white: #fff;
 
 @mixin flex-align-center {
   display: flex;
@@ -81,5 +83,27 @@ body .aboutContainer {
   &banner {
     text-align: center;
     padding-bottom: 30px;
+  }
+}
+
+.support__ {
+  &navbar {
+    @include flex-align-center;
+    background: $orange;
+    a {
+      color: $white;
+      padding: 10px;
+      border-right: 1px solid $white;
+    }
+  }
+  &hero {
+    @include flex-align-center;
+    background: url(../img/support__hero.jpg);
+    .title {
+      color: $white;
+    }
+    &-wrapper {
+      border-bottom: 2px solid $orange;
+    }
   }
 }

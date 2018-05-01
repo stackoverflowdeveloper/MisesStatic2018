@@ -1506,4 +1506,32 @@ body .aboutContainer {
   text-align: center;
   padding-bottom: 30px;
 }
+
+.support__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e35a24;
+}
+
+.support__navbar a {
+  color: #fff;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+.support__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/support__hero.jpg);
+}
+
+.support__hero .title {
+  color: #fff;
+}
+
+.support__hero-wrapper {
+  border-bottom: 2px solid #e35a24;
+}
 /*# sourceMappingURL=custom.css.map */
