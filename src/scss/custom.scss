@@ -1,4 +1,4 @@
-@import 'style.scss';
+@import "style.scss";
 
 $main-blue: #214d84;
 $orange: #e35a24;
@@ -14,7 +14,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-body .aboutContainer {
+body .container {
   display: block;
   @media (max-width: 1280px) {
     padding: 0 30px;
@@ -87,6 +87,10 @@ body .aboutContainer {
 }
 
 .support__ {
+  &heading {
+    color: $orange;
+    font-weight: normal;
+  }
   &navbar {
     @include flex-align-center;
     background: $orange;
@@ -99,11 +103,33 @@ body .aboutContainer {
   &hero {
     @include flex-align-center;
     background: url(../img/support__hero.jpg);
+    height: 545px;
     .title {
       color: $white;
     }
     &-wrapper {
       border-bottom: 2px solid $orange;
+    }
+    &-text {
+      color: $white;
+      max-width: 300px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  &form {
+    &-price {
+      @include flex-align-center;
+      background: $main-blue;
+      color: $white;
+      margin: 15px;
+      height: 75px;
+      font-weight: bold;
+      transition: 0.35s linear;
+      cursor: pointer;
+      &:hover {
+        background: $orange;
+      }
     }
   }
 }
