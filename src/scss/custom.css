@@ -1584,4 +1584,73 @@ body .container {
   border-left: 2px solid #e35a24;
   border-right: 2px solid #e35a24;
 }
+
+.support__info-banner {
+  background: url("../img/support__banner.jpg");
+  height: 344px;
+}
+
+.support__info-title {
+  color: #fff;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-bottom: 2px solid #e35a24;
+  width: 200px;
+}
+
+.support__info-text {
+  color: #fff;
+  padding: 0 0 0 50px;
+  width: 640px;
+}
+
+.support__info-tax {
+  margin-top: 50px;
+}
+
+.support__info-column {
+  background: #fff7f4;
+  margin: 25px;
+}
+
+.support__info-heading {
+  color: #e35a24;
+}
+
+.support__info-italic {
+  text-align: initial;
+  font-style: italic;
+}
+
+.support__info-wrapper {
+  background: #fff;
+}
+
+.support__info-blue {
+  color: #214d84;
+  text-align: center;
+}
+
+.support__info-dark {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.support__info-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__info-btn {
+  border: 0;
+  background: #e35a24;
+  color: #fff;
+}
+
+.support__info-foto {
+  margin-top: 25px;
+}
 /*# sourceMappingURL=custom.css.map */

@@ -149,4 +149,60 @@ body .container {
       border-right: 2px solid $orange;
     }
   }
+  &info {
+    &-banner {
+      background: url("../img/support__banner.jpg");
+      height: 344px;
+    }
+    &-title {
+      color: $white;
+      margin-left: 50px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      border-bottom: 2px solid $orange;
+      width: 200px;
+    }
+    &-text {
+      color: $white;
+      padding: 0 0 0 50px;
+      width: 640px;
+    }
+    &-tax {
+      margin-top: 50px;
+    }
+    &-column {
+      background: $cream;
+      margin: 25px;
+    }
+    &-heading {
+      color: $orange;
+    }
+    &-italic {
+      text-align: initial;
+      font-style: italic;
+    }
+    &-wrapper {
+      background: $white;
+    }
+    &-blue {
+      color: $main-blue;
+      text-align: center;
+    }
+    &-dark {
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+    &-action {
+      @include flex-align-center;
+    }
+    &-btn {
+      border: 0;
+      background: $orange;
+      color: $white;
+    }
+    &-foto {
+      margin-top: 25px;
+    }
+  }
 }
