@@ -1512,6 +1512,12 @@ body .container {
   font-weight: normal;
 }
 
+.support__divider {
+  background: url("../img/support__divider.png") no-repeat top center;
+  height: 30px;
+  border-bottom: 2px solid #e35a24;
+}
+
 .support__navbar {
   display: flex;
   align-items: center;
@@ -1563,5 +1569,19 @@ body .container {
 
 .support__form-price:hover {
   background: #e35a24;
+}
+
+.support__form-data {
+  background: #fff7f4;
+  height: 100px;
+}
+
+.support__form-account {
+  color: #e35a24;
+}
+
+.support__form-divider {
+  border-left: 2px solid #e35a24;
+  border-right: 2px solid #e35a24;
 }
 /*# sourceMappingURL=custom.css.map */

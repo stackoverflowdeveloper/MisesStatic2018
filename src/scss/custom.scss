@@ -3,6 +3,7 @@
 $main-blue: #214d84;
 $orange: #e35a24;
 $white: #fff;
+$cream: #fff7f4;
 
 @mixin flex-align-center {
   display: flex;
@@ -91,6 +92,11 @@ body .container {
     color: $orange;
     font-weight: normal;
   }
+  &divider {
+    background: url("../img/support__divider.png") no-repeat top center;
+    height: 30px;
+    border-bottom: 2px solid $orange;
+  }
   &navbar {
     @include flex-align-center;
     background: $orange;
@@ -130,6 +136,17 @@ body .container {
       &:hover {
         background: $orange;
       }
+    }
+    &-data {
+      background: $cream;
+      height: 100px;
+    }
+    &-account {
+      color: $orange;
+    }
+    &-divider {
+      border-left: 2px solid $orange;
+      border-right: 2px solid $orange;
     }
   }
 }
