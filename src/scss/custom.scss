@@ -223,4 +223,48 @@ body .container {
       font-style: italic;
     }
   }
+  &contact {
+    &-divider {
+      border-right: 2px solid $orange;
+    }
+    &-text {
+      font-style: italic;
+      margin-left: 30px;
+    }
+    &-phone {
+      background: url(../img/support__icon-phone.png) no-repeat;
+      width: 24px;
+      height: 24px;
+      content: "";
+      position: absolute;
+    }
+    &-mail {
+      background: url(../img/support__icon-mail.png) no-repeat;
+      width: 24px;
+      height: 24px;
+      content: "";
+      position: absolute;
+    }
+    &-pin {
+      background: url(../img/support__icon-pin.png) no-repeat;
+      width: 28px;
+      height: 28px;
+      content: "";
+      position: absolute;
+    }
+    &-folder {
+      background: url(../img/support__icon-folder.png) no-repeat;
+      width: 28px;
+      height: 28px;
+      content: "";
+      position: absolute;
+    }
+    &-subtitle {
+      color: $orange;
+      margin-left: 40px;
+    }
+    &-italic {
+      font-style: italic;
+    }
+  }
 }

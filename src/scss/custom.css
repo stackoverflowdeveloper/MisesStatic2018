@@ -1673,4 +1673,54 @@ body .container {
   text-align: center;
   font-style: italic;
 }
+
+.support__contact-divider {
+  border-right: 2px solid #e35a24;
+}
+
+.support__contact-text {
+  font-style: italic;
+  margin-left: 30px;
+}
+
+.support__contact-phone {
+  background: url(../img/support__icon-phone.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-mail {
+  background: url(../img/support__icon-mail.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-pin {
+  background: url(../img/support__icon-pin.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-folder {
+  background: url(../img/support__icon-folder.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-subtitle {
+  color: #e35a24;
+  margin-left: 40px;
+}
+
+.support__contact-italic {
+  font-style: italic;
+}
 /*# sourceMappingURL=custom.css.map */
