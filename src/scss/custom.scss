@@ -326,4 +326,15 @@ body .container {
       background: $orange;
     }
   }
+  &footer {
+    background: $main-blue;
+    &-item {
+      color: $white;
+      text-decoration: unset;
+      border-right: 2px solid $orange;
+    }
+    &-space {
+      margin-top: 50px;
+    }
+  }
 }
