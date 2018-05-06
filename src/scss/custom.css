@@ -1654,10 +1654,23 @@ body .container {
   margin-top: 25px;
 }
 
+.support__pay-divider {
+  border-right: 2px solid #e35a24;
+}
+
 .support__pay-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 50px;
+}
+
+.support__sponsor-wrapper {
+  text-align: center;
+}
+
+.support__sponsor-italic {
+  text-align: center;
+  font-style: italic;
 }
 /*# sourceMappingURL=custom.css.map */

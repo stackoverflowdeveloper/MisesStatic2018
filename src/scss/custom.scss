@@ -206,9 +206,21 @@ body .container {
     }
   }
   &pay {
+    &-divider {
+      border-right: 2px solid $orange;
+    }
     &-wrapper {
       @include flex-align-center;
       padding-top: 50px;
+    }
+  }
+  &sponsor {
+    &-wrapper {
+      text-align: center;
+    }
+    &-italic {
+      text-align: center;
+      font-style: italic;
     }
   }
 }
