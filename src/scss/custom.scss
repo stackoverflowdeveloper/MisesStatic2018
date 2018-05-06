@@ -205,4 +205,10 @@ body .container {
       margin-top: 25px;
     }
   }
+  &pay {
+    &-wrapper {
+      @include flex-align-center;
+      padding-top: 50px;
+    }
+  }
 }

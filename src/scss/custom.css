@@ -1653,4 +1653,11 @@ body .container {
 .support__info-foto {
   margin-top: 25px;
 }
+
+.support__pay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
 /*# sourceMappingURL=custom.css.map */
