@@ -1417,12 +1417,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-body .aboutContainer {
+body .container {
   display: block;
 }
 
 @media (max-width: 1280px) {
-  body .aboutContainer {
+  body .container {
     padding: 0 30px;
   }
 }
@@ -1505,5 +1505,354 @@ body .aboutContainer {
 .about__banner {
   text-align: center;
   padding-bottom: 30px;
+}
+
+.support .container {
+  border-bottom: 0;
+}
+
+.support__heading {
+  color: #e35a24;
+  font-weight: normal;
+}
+
+.support__divider {
+  background: url("../img/support__divider.png") no-repeat top center;
+  height: 30px;
+  border-bottom: 2px solid #e35a24;
+  margin-top: 60px;
+}
+
+.support__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e35a24;
+}
+
+.support__navbar a {
+  color: #fff;
+  padding: 0 10px;
+  margin: 20px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.support__navbar a:first-child, .support__navbar a:nth-last-child(2) {
+  border-right: 0;
+}
+
+.support__navbar a:last-child {
+  border-right: 0;
+  margin: 0;
+  padding: 20px 60px;
+  background: #214d84;
+}
+
+.support__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/support__hero.jpg);
+  height: 545px;
+  padding-top: 60px;
+}
+
+.support__hero .title {
+  color: #fff;
+}
+
+.support__hero-body {
+  padding: 1.5rem;
+}
+
+.support__hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__hero-title::after {
+  border-bottom: 2px solid #e35a24;
+  content: "";
+  position: absolute;
+  width: 150px;
+  margin-top: 50px;
+}
+
+.support__hero-text {
+  color: #fff;
+  max-width: 360px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.support__form-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #214d84;
+  color: #fff;
+  margin: 15px;
+  height: 75px;
+  font-weight: bold;
+  transition: 0.35s linear;
+  cursor: pointer;
+}
+
+.support__form-price:hover {
+  background: #e35a24;
+}
+
+.support__form-data {
+  background: #fff7f4;
+  height: 100px;
+}
+
+.support__form-account {
+  color: #e35a24;
+}
+
+.support__form-divider {
+  border-left: 2px solid #e35a24;
+  border-right: 2px solid #e35a24;
+}
+
+.support__info-banner {
+  background: url("../img/support__banner.jpg");
+  height: 344px;
+}
+
+.support__info-title {
+  color: #fff;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border-bottom: 2px solid #e35a24;
+  width: 200px;
+}
+
+.support__info-text {
+  color: #fff;
+  padding: 0 0 0 50px;
+  width: 640px;
+}
+
+.support__info-tax {
+  margin-top: 50px;
+}
+
+.support__info-column {
+  background: #fff7f4;
+  margin: 25px;
+}
+
+.support__info-heading {
+  color: #e35a24;
+}
+
+.support__info-italic {
+  text-align: initial;
+  font-style: italic;
+}
+
+.support__info-wrapper {
+  background: #fff;
+}
+
+.support__info-blue {
+  color: #214d84;
+  text-align: center;
+}
+
+.support__info-dark {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.support__info-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__info-btn {
+  border: 0;
+  background: #e35a24;
+  color: #fff;
+}
+
+.support__info-foto {
+  margin-top: 25px;
+}
+
+.support__pay-divider {
+  border-right: 2px solid #e35a24;
+}
+
+.support__pay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.support__sponsor-wrapper {
+  text-align: center;
+}
+
+.support__sponsor-italic {
+  text-align: center;
+  font-style: italic;
+}
+
+.support__contact-divider {
+  border-right: 2px solid #e35a24;
+}
+
+.support__contact-text {
+  font-style: italic;
+  margin-left: 30px;
+}
+
+.support__contact-phone {
+  background: url(../img/support__icon-phone.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-mail {
+  background: url(../img/support__icon-mail.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-pin {
+  background: url(../img/support__icon-pin.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-folder {
+  background: url(../img/support__icon-folder.png) no-repeat;
+  width: 28px;
+  height: 28px;
+  content: "";
+  position: absolute;
+}
+
+.support__contact-subtitle {
+  color: #e35a24;
+  margin-left: 40px;
+}
+
+.support__contact-italic {
+  font-style: italic;
+}
+
+.support__elite-space {
+  margin-top: 50px;
+}
+
+.support__elite-italic {
+  font-style: italic;
+}
+
+.support__elite-year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #214d84;
+  color: #fff;
+  margin: 15px;
+  height: 50px;
+  transition: 0.35s linear;
+  cursor: pointer;
+}
+
+.support__elite-year:hover {
+  background: #e35a24;
+}
+
+.support__elite-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__elite-main {
+  color: #e35a24;
+  font-style: italic;
+}
+
+.support__elite-left {
+  margin-left: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.support__elite-right {
+  margin-right: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.support__elite-reccomendation {
+  color: #e35a24;
+  text-align: right;
+  font-style: italic;
+}
+
+.support__elite-relevant {
+  color: #e35a24;
+}
+
+.support__elite-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__elite-bullet {
+  width: 16px;
+  height: 16px;
+  background: #214d84;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.support__elite-active {
+  background: #e35a24;
+}
+
+.support__footer {
+  background: #214d84;
+}
+
+.support__footer-item {
+  color: #fff;
+  text-decoration: unset;
+  border-right: 2px solid #e35a24;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+
+.support__footer-item:last-child {
+  border-right: 0;
+}
+
+.support__footer-space {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=custom.css.map */

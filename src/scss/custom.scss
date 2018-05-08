@@ -1,7 +1,8 @@
-@import 'style.scss';
-
+@import "style.scss";
 $main-blue: #214d84;
-
+$orange: #e35a24;
+$white: #fff;
+$cream: #fff7f4;
 @mixin flex-align-center {
   display: flex;
   align-items: center;
@@ -12,7 +13,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-body .aboutContainer {
+body .container {
   display: block;
   @media (max-width: 1280px) {
     padding: 0 30px;
@@ -21,7 +22,6 @@ body .aboutContainer {
 
 .gridWrapper {
   display: block;
-
   @media (min-width: 768px) {
     margin: 30px 0;
     display: flex;
@@ -81,5 +81,293 @@ body .aboutContainer {
   &banner {
     text-align: center;
     padding-bottom: 30px;
+  }
+}
+
+.support .container {
+  border-bottom: 0;
+}
+
+.support__ {
+  &heading {
+    color: $orange;
+    font-weight: normal;
+  }
+  &divider {
+    background: url("../img/support__divider.png") no-repeat top center;
+    height: 30px;
+    border-bottom: 2px solid $orange;
+    margin-top: 60px;
+  }
+  &navbar {
+    @include flex-align-center;
+    background: $orange;
+    a {
+      color: $white;
+      padding: 0 10px;
+      margin: 20px 0;
+      border-right: 1px solid rgba(255, 255, 255, 0.45);
+      &:first-child,
+      &:nth-last-child(2) {
+        border-right: 0;
+      }
+      &:last-child {
+        border-right: 0;
+        margin: 0;
+        padding: 20px 60px;
+        background: $main-blue;
+      }
+    }
+  }
+  &hero {
+    @include flex-align-center;
+    background: url(../img/support__hero.jpg);
+    height: 545px;
+    padding-top: 60px;
+    .title {
+      color: $white;
+    }
+    &-body {
+      padding: 1.5rem;
+    }
+    &-title {
+      @include flex-align-center;
+    }
+    &-title::after {
+      border-bottom: 2px solid $orange;
+      content: "";
+      position: absolute;
+      width: 150px;
+      margin-top: 50px;
+    }
+    &-text {
+      color: $white;
+      max-width: 360px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 20px;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &form {
+    &-price {
+      @include flex-align-center;
+      background: $main-blue;
+      color: $white;
+      margin: 15px;
+      height: 75px;
+      font-weight: bold;
+      transition: 0.35s linear;
+      cursor: pointer;
+      &:hover {
+        background: $orange;
+      }
+    }
+    &-data {
+      background: $cream;
+      height: 100px;
+    }
+    &-account {
+      color: $orange;
+    }
+    &-divider {
+      border-left: 2px solid $orange;
+      border-right: 2px solid $orange;
+    }
+  }
+  &info {
+    &-banner {
+      background: url("../img/support__banner.jpg");
+      height: 344px;
+    }
+    &-title {
+      color: $white;
+      margin-left: 50px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      border-bottom: 2px solid $orange;
+      width: 200px;
+    }
+    &-text {
+      color: $white;
+      padding: 0 0 0 50px;
+      width: 640px;
+    }
+    &-tax {
+      margin-top: 50px;
+    }
+    &-column {
+      background: $cream;
+      margin: 25px;
+    }
+    &-heading {
+      color: $orange;
+    }
+    &-italic {
+      text-align: initial;
+      font-style: italic;
+    }
+    &-wrapper {
+      background: $white;
+    }
+    &-blue {
+      color: $main-blue;
+      text-align: center;
+    }
+    &-dark {
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+    &-action {
+      @include flex-align-center;
+    }
+    &-btn {
+      border: 0;
+      background: $orange;
+      color: $white;
+    }
+    &-foto {
+      margin-top: 25px;
+    }
+  }
+  &pay {
+    &-divider {
+      border-right: 2px solid $orange;
+    }
+    &-wrapper {
+      @include flex-align-center;
+      padding-top: 50px;
+    }
+  }
+  &sponsor {
+    &-wrapper {
+      text-align: center;
+    }
+    &-italic {
+      text-align: center;
+      font-style: italic;
+    }
+  }
+  &contact {
+    &-divider {
+      border-right: 2px solid $orange;
+    }
+    &-text {
+      font-style: italic;
+      margin-left: 30px;
+    }
+    &-phone {
+      background: url(../img/support__icon-phone.png) no-repeat;
+      width: 24px;
+      height: 24px;
+      content: "";
+      position: absolute;
+    }
+    &-mail {
+      background: url(../img/support__icon-mail.png) no-repeat;
+      width: 24px;
+      height: 24px;
+      content: "";
+      position: absolute;
+    }
+    &-pin {
+      background: url(../img/support__icon-pin.png) no-repeat;
+      width: 28px;
+      height: 28px;
+      content: "";
+      position: absolute;
+    }
+    &-folder {
+      background: url(../img/support__icon-folder.png) no-repeat;
+      width: 28px;
+      height: 28px;
+      content: "";
+      position: absolute;
+    }
+    &-subtitle {
+      color: $orange;
+      margin-left: 40px;
+    }
+    &-italic {
+      font-style: italic;
+    }
+  }
+  &elite {
+    &-space {
+      margin-top: 50px;
+    }
+    &-italic {
+      font-style: italic;
+    }
+    &-year {
+      @include flex-align-center;
+      background: $main-blue;
+      color: $white;
+      margin: 15px;
+      height: 50px;
+      transition: 0.35s linear;
+      cursor: pointer;
+      &:hover {
+        background: $orange;
+      }
+    }
+    &-carousel {
+      @include flex-align-center;
+    }
+    &-main {
+      color: $orange;
+      font-style: italic;
+    }
+    &-left {
+      margin-left: 0;
+      position: absolute;
+      cursor: pointer;
+    }
+    &-right {
+      margin-right: 0;
+      position: absolute;
+      cursor: pointer;
+    }
+    &-reccomendation {
+      color: $orange;
+      text-align: right;
+      font-style: italic;
+    }
+    &-relevant {
+      color: $orange;
+    }
+    &-wrapper {
+      @include flex-align-center;
+    }
+    &-bullet {
+      width: 16px;
+      height: 16px;
+      background: $main-blue;
+      border-radius: 50%;
+      margin: 5px;
+      cursor: pointer;
+    }
+    &-active {
+      background: $orange;
+    }
+  }
+  &footer {
+    background: $main-blue;
+    &-item {
+      color: $white;
+      text-decoration: unset;
+      border-right: 2px solid $orange;
+      padding: 0 10px;
+      margin: 20px 0;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+    &-space {
+      margin-top: 50px;
+    }
   }
 }
