@@ -94,14 +94,26 @@ body .container {
     font-weight: normal;
   }
   &divider {
-    background: url("../img/support__divider.png") no-repeat top center;
+    @include flex-align-center;
     height: 30px;
-    border-bottom: 2px solid $orange;
     margin-top: 60px;
+    position: relative;
+    &-column {
+      border-bottom: 2px solid $orange;
+    }
+    &::before {
+      content:  url("../img/support__divider.png");
+      position: absolute;
+      bottom: 70px;
+    }
   }
   &navbar {
     @include flex-align-center;
     background: $orange;
+    .navbar-brand, .navbar-tabs {
+      max-width: 1190px;
+      // width: 100%;
+    }
     a {
       color: $white;
       padding: 0 10px;
@@ -121,14 +133,20 @@ body .container {
   }
   &hero {
     @include flex-align-center;
-    background: url(../img/support__hero.jpg);
+    background: url(../img/support__hero.jpg) no-repeat;
     height: 545px;
     padding-top: 60px;
+    max-width: 1195px;
+    width: 100%;
+    background-size: 1195px;
     .title {
       color: $white;
     }
     &-body {
       padding: 1.5rem;
+    }
+    &-wrapper {
+      position: relative;
     }
     &-title {
       @include flex-align-center;
@@ -150,8 +168,18 @@ body .container {
       font-size: 16px;
       line-height: 24px;
     }
+    &-scroll {
+      background: url(../img/support__scroll.png) no-repeat;
+      width: 64px;
+      height: 64px;
+      position: relative;
+      bottom: 85px;
+    }
   }
   &form {
+    select {
+      width: 282px;
+    }
     &-price {
       @include flex-align-center;
       background: $main-blue;
@@ -167,7 +195,11 @@ body .container {
     }
     &-data {
       background: $cream;
-      height: 100px;
+      height: 185px;
+      padding: 25px 0;
+      .column {
+        padding: 10px 30px;
+      }
     }
     &-account {
       color: $orange;
@@ -370,4 +402,28 @@ body .container {
       margin-top: 50px;
     }
   }
+}
+
+.input, .textarea {
+  border-radius: 0;
+}
+
+.input::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color:#333;
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color:#333;
+}
+
+.input:-moz-placeholder,
+.textarea:-moz-placeholder {
+  color:#333;
+}
+
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  color:#333;
 }

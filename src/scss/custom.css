@@ -1517,10 +1517,22 @@ body .container {
 }
 
 .support__divider {
-  background: url("../img/support__divider.png") no-repeat top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 30px;
-  border-bottom: 2px solid #e35a24;
   margin-top: 60px;
+  position: relative;
+}
+
+.support__divider-column {
+  border-bottom: 2px solid #e35a24;
+}
+
+.support__divider::before {
+  content: url("../img/support__divider.png");
+  position: absolute;
+  bottom: 70px;
 }
 
 .support__navbar {
@@ -1528,6 +1540,10 @@ body .container {
   align-items: center;
   justify-content: center;
   background: #e35a24;
+}
+
+.support__navbar .navbar-brand, .support__navbar .navbar-tabs {
+  max-width: 1190px;
 }
 
 .support__navbar a {
@@ -1552,9 +1568,12 @@ body .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../img/support__hero.jpg);
+  background: url(../img/support__hero.jpg) no-repeat;
   height: 545px;
   padding-top: 60px;
+  max-width: 1195px;
+  width: 100%;
+  background-size: 1195px;
 }
 
 .support__hero .title {
@@ -1563,6 +1582,10 @@ body .container {
 
 .support__hero-body {
   padding: 1.5rem;
+}
+
+.support__hero-wrapper {
+  position: relative;
 }
 
 .support__hero-title {
@@ -1590,6 +1613,18 @@ body .container {
   line-height: 24px;
 }
 
+.support__hero-scroll {
+  background: url(../img/support__scroll.png) no-repeat;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  bottom: 85px;
+}
+
+.support__form select {
+  width: 282px;
+}
+
 .support__form-price {
   display: flex;
   align-items: center;
@@ -1609,7 +1644,12 @@ body .container {
 
 .support__form-data {
   background: #fff7f4;
-  height: 100px;
+  height: 185px;
+  padding: 25px 0;
+}
+
+.support__form-data .column {
+  padding: 10px 30px;
 }
 
 .support__form-account {
@@ -1854,5 +1894,29 @@ body .container {
 
 .support__footer-space {
   margin-top: 50px;
+}
+
+.input, .textarea {
+  border-radius: 0;
+}
+
+.input::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color: #333;
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color: #333;
+}
+
+.input:-moz-placeholder,
+.textarea:-moz-placeholder {
+  color: #333;
+}
+
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  color: #333;
 }
 /*# sourceMappingURL=custom.css.map */
