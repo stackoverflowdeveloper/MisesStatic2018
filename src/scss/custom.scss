@@ -31,6 +31,15 @@ body .container {
   }
 }
 
+.title {
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .about__ {
   &heading {
     font-size: 36px;
@@ -95,16 +104,12 @@ body .container {
   }
   &divider {
     @include flex-align-center;
-    height: 30px;
     margin-top: 60px;
     position: relative;
-    &-column {
-      border-bottom: 2px solid $orange;
-    }
+    border-bottom: 2px solid $orange;
     &::before {
       content:  url("../img/support__divider.png");
       position: absolute;
-      bottom: 70px;
     }
   }
   &navbar {
@@ -243,6 +248,7 @@ body .container {
     }
     &-wrapper {
       background: $white;
+      margin-top: 35px;
     }
     &-blue {
       color: $main-blue;
@@ -266,8 +272,12 @@ body .container {
     }
   }
   &pay {
+    .column {
+      padding-right: 30px; 
+    }
     &-divider {
-      border-right: 2px solid $orange;
+      border-left: 2px solid $orange;
+      padding-left: 30px;
     }
     &-wrapper {
       @include flex-align-center;
@@ -284,8 +294,12 @@ body .container {
     }
   }
   &contact {
+    .column {
+      padding-right: 30px;
+    }
     &-divider {
-      border-right: 2px solid $orange;
+      padding-left: 30px;
+      border-left: 2px solid $orange;
     }
     &-text {
       font-style: italic;
@@ -328,6 +342,9 @@ body .container {
     }
   }
   &elite {
+    h2.title.support__heading {
+      margin-bottom: 30px;
+    }
     &-space {
       margin-top: 50px;
     }
@@ -388,18 +405,39 @@ body .container {
   }
   &footer {
     background: $main-blue;
+    padding-bottom: 4rem;
+    &-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
     &-item {
       color: $white;
       text-decoration: unset;
       border-right: 2px solid $orange;
       padding: 0 10px;
       margin: 20px 0;
+      img:hover {
+        background-color: transparent;
+      }
       &:last-child {
         border-right: 0;
       }
     }
     &-space {
-      margin-top: 50px;
+      margin-top: 30px;
+    }
+    &-info {
+      margin-left: 10px;
+      color: #a9b8c0;
+      &.has-text-right {
+        margin-right: 15px;
+      }
+    }
+    &-link {
+      color: #a9b8c0;
+      &:visited {
+        color: #a9b8c0;
+      }
     }
   }
 }

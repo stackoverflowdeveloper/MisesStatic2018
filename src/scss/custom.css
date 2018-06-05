@@ -1441,6 +1441,15 @@ body .container {
   }
 }
 
+.title {
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .about__heading {
   font-size: 36px;
   color: #214d84;
@@ -1520,19 +1529,14 @@ body .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px;
   margin-top: 60px;
   position: relative;
-}
-
-.support__divider-column {
   border-bottom: 2px solid #e35a24;
 }
 
 .support__divider::before {
   content: url("../img/support__divider.png");
   position: absolute;
-  bottom: 70px;
 }
 
 .support__navbar {
@@ -1701,6 +1705,7 @@ body .container {
 
 .support__info-wrapper {
   background: #fff;
+  margin-top: 35px;
 }
 
 .support__info-blue {
@@ -1730,8 +1735,13 @@ body .container {
   margin-top: 25px;
 }
 
+.support__pay .column {
+  padding-right: 30px;
+}
+
 .support__pay-divider {
-  border-right: 2px solid #e35a24;
+  border-left: 2px solid #e35a24;
+  padding-left: 30px;
 }
 
 .support__pay-wrapper {
@@ -1750,8 +1760,13 @@ body .container {
   font-style: italic;
 }
 
+.support__contact .column {
+  padding-right: 30px;
+}
+
 .support__contact-divider {
-  border-right: 2px solid #e35a24;
+  padding-left: 30px;
+  border-left: 2px solid #e35a24;
 }
 
 .support__contact-text {
@@ -1798,6 +1813,10 @@ body .container {
 
 .support__contact-italic {
   font-style: italic;
+}
+
+.support__elite h2.title.support__heading {
+  margin-bottom: 30px;
 }
 
 .support__elite-space {
@@ -1878,6 +1897,12 @@ body .container {
 
 .support__footer {
   background: #214d84;
+  padding-bottom: 4rem;
+}
+
+.support__footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .support__footer-item {
@@ -1888,12 +1913,33 @@ body .container {
   margin: 20px 0;
 }
 
+.support__footer-item img:hover {
+  background-color: transparent;
+}
+
 .support__footer-item:last-child {
   border-right: 0;
 }
 
 .support__footer-space {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.support__footer-info {
+  margin-left: 10px;
+  color: #a9b8c0;
+}
+
+.support__footer-info.has-text-right {
+  margin-right: 15px;
+}
+
+.support__footer-link {
+  color: #a9b8c0;
+}
+
+.support__footer-link:visited {
+  color: #a9b8c0;
 }
 
 .input, .textarea {
