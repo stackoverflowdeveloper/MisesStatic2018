@@ -31,6 +31,15 @@ body .container {
   }
 }
 
+.title {
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .about__ {
   &heading {
     font-size: 36px;
@@ -94,14 +103,22 @@ body .container {
     font-weight: normal;
   }
   &divider {
-    background: url("../img/support__divider.png") no-repeat top center;
-    height: 30px;
-    border-bottom: 2px solid $orange;
+    @include flex-align-center;
     margin-top: 60px;
+    position: relative;
+    border-bottom: 2px solid $orange;
+    &::before {
+      content:  url("../img/support__divider.png");
+      position: absolute;
+    }
   }
   &navbar {
     @include flex-align-center;
     background: $orange;
+    .navbar-brand, .navbar-tabs {
+      max-width: 1190px;
+      // width: 100%;
+    }
     a {
       color: $white;
       padding: 0 10px;
@@ -121,14 +138,20 @@ body .container {
   }
   &hero {
     @include flex-align-center;
-    background: url(../img/support__hero.jpg);
+    background: url(../img/support__hero.jpg) no-repeat;
     height: 545px;
     padding-top: 60px;
+    max-width: 1195px;
+    width: 100%;
+    background-size: 1195px;
     .title {
       color: $white;
     }
     &-body {
       padding: 1.5rem;
+    }
+    &-wrapper {
+      position: relative;
     }
     &-title {
       @include flex-align-center;
@@ -150,8 +173,18 @@ body .container {
       font-size: 16px;
       line-height: 24px;
     }
+    &-scroll {
+      background: url(../img/support__scroll.png) no-repeat;
+      width: 64px;
+      height: 64px;
+      position: relative;
+      bottom: 85px;
+    }
   }
   &form {
+    select {
+      width: 282px;
+    }
     &-price {
       @include flex-align-center;
       background: $main-blue;
@@ -167,7 +200,11 @@ body .container {
     }
     &-data {
       background: $cream;
-      height: 100px;
+      height: 185px;
+      padding: 25px 0;
+      .column {
+        padding: 10px 30px;
+      }
     }
     &-account {
       color: $orange;
@@ -211,6 +248,7 @@ body .container {
     }
     &-wrapper {
       background: $white;
+      margin-top: 35px;
     }
     &-blue {
       color: $main-blue;
@@ -234,8 +272,12 @@ body .container {
     }
   }
   &pay {
+    .column {
+      padding-right: 30px; 
+    }
     &-divider {
-      border-right: 2px solid $orange;
+      border-left: 2px solid $orange;
+      padding-left: 30px;
     }
     &-wrapper {
       @include flex-align-center;
@@ -252,8 +294,12 @@ body .container {
     }
   }
   &contact {
+    .column {
+      padding-right: 30px;
+    }
     &-divider {
-      border-right: 2px solid $orange;
+      padding-left: 30px;
+      border-left: 2px solid $orange;
     }
     &-text {
       font-style: italic;
@@ -296,6 +342,9 @@ body .container {
     }
   }
   &elite {
+    h2.title.support__heading {
+      margin-bottom: 30px;
+    }
     &-space {
       margin-top: 50px;
     }
@@ -356,18 +405,63 @@ body .container {
   }
   &footer {
     background: $main-blue;
+    padding-bottom: 4rem;
+    &-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
     &-item {
       color: $white;
       text-decoration: unset;
       border-right: 2px solid $orange;
       padding: 0 10px;
       margin: 20px 0;
+      img:hover {
+        background-color: transparent;
+      }
       &:last-child {
         border-right: 0;
       }
     }
     &-space {
-      margin-top: 50px;
+      margin-top: 30px;
+    }
+    &-info {
+      margin-left: 10px;
+      color: #a9b8c0;
+      &.has-text-right {
+        margin-right: 15px;
+      }
+    }
+    &-link {
+      color: #a9b8c0;
+      &:visited {
+        color: #a9b8c0;
+      }
     }
   }
+}
+
+.input, .textarea {
+  border-radius: 0;
+}
+
+.input::-moz-placeholder,
+.textarea::-moz-placeholder {
+  color:#333;
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  color:#333;
+}
+
+.input:-moz-placeholder,
+.textarea:-moz-placeholder {
+  color:#333;
+}
+
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+  color:#333;
 }
